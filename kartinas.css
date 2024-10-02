@@ -39,6 +39,8 @@ button:hover{
 img{
   border-radius: 17px;
   size: 64px;
+    transition: transform 0.55s ease-in-out;
+    
 }
 
 .card2{
@@ -53,7 +55,7 @@ img{
 }
 
 .card1{
-  background-color: rgb(255, 255, 0, 0.7) ;
+  background-image: linear-gradient(rgb(255, 255, 0,0.9), rgb(255, 255, 255,0.7)) ;
   margin: 8px;
   padding: 10px;
   height: 350px;
@@ -99,8 +101,21 @@ img{
   display: block;
 }
 
-.dropdown-content a:hover {background-color: #000000;}
+.dropdown-content a:hover {background-color: #c5c76c;}
 
 .dropdown:hover .dropdown-content {display: block;}
 
 .dropdown:hover .dropbtn {background-color:   rgb(255, 255, 0, 0.8);}
+
+
+/* @keyframes pop {
+
+  0% {transform:scale(1)};
+  50% {transform:scale(1.9)};
+  100% {transform:scale(1.5)};
+} */
+
+img:hover {
+  /* animation: pop 0.3s ease-in-out forwards; */
+  transform: scale(1.04);
+}
